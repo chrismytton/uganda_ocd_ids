@@ -12,8 +12,8 @@ csv = CSV.parse(open(csv_url).read, headers: true, header_converters: :symbol)
 rows = csv.map do |r|
   next unless r[:test_area_id]
   {
-    id: r[:test_area_id],
-    name: r[:areaconstituency] || r[:areadistrict] || r[:areasub_region] || r[:arearegion]
+    id: r[:test_area_id].gsub(/_+/, '_'),
+    name: (r[:areaconstituency] || r[:areadistrict] || r[:areasub_region] || r[:arearegion]).gsub(/[[:space:]]+/, ' ')
   }
 end
 
