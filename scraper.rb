@@ -1,25 +1,22 @@
-# This is a template for a Ruby scraper on morph.io (https://morph.io)
-# including some code snippets below that you should find helpful
+require 'bundler/setup'
+require 'scraperwiki'
+require 'nokogiri'
+require 'open-uri'
+require 'csv'
+require 'pry'
 
-# require 'scraperwiki'
-# require 'mechanize'
-#
-# agent = Mechanize.new
-#
-# # Read in a page
-# page = agent.get("http://foo.com")
-#
-# # Find somehing on the page using css selectors
-# p page.at('div.content')
-#
-# # Write out to the sqlite database using scraperwiki library
-# ScraperWiki.save_sqlite(["name"], {"name" => "susan", "occupation" => "software developer"})
-#
-# # An arbitrary query against the database
-# ScraperWiki.select("* from data where 'name'='peter'")
+csv_url = 'https://docs.google.com/spreadsheets/d/1LetNFNq6ovg4bbq-Whze0Q06CYSpNqpRIzSUb9yVtw4/export?format=csv'
 
-# You don't have to do things with the Mechanize or ScraperWiki libraries.
-# You can use whatever gems you want: https://morph.io/documentation/ruby
-# All that matters is that your final data is written to an SQLite database
-# called "data.sqlite" in the current working directory which has at least a table
-# called "data".
+csv = CSV.parse(open(csv_url).read, headers: true, header_converters: :symbol)
+
+rows = csv.map do |r|
+  next unless r[:test_area_id]
+  {
+    id: r[:test_area_id],
+    name: r[:areaconstituency] || r[:areadistrict] || r[:areasub_region] || r[:arearegion]
+  }
+end
+
+rows.compact.uniq.reject { |r| r[:name].end_with?('Youth') }.each do |row|
+  ScraperWiki.save_sqlite([:id], row)
+end
