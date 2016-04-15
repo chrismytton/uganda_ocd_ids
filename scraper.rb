@@ -9,21 +9,44 @@ csv_url = 'https://docs.google.com/spreadsheets/d/1LetNFNq6ovg4bbq-Whze0Q06CYSpN
 
 csv = CSV.parse(open(csv_url).read, headers: true, header_converters: :symbol)
 
-rows = csv.map do |r|
-  next unless r[:test_area_id]
-  {
-    id: r[:test_area_id].gsub(/_+/, '_'),
-    name: (r[:areaconstituency] || r[:areadistrict] || r[:areasub_region] || r[:arearegion]).gsub(/[[:space:]]+/, ' ')
-  }
+ocd_ids = []
+
+base_id = "ocd-division/country:ng"
+
+def idify(name)
+  name.to_s.downcase.gsub(/[[:space:]]+/, '_')
 end
 
-rows.compact.uniq.map { |r| r[:id] }.each do |r|
-  parts = r.split('/')
-  (parts.size - 1).downto(2).each do |n|
-    rows << { id: parts.take(n).join('/'), name: nil }
+csv.each do |r|
+  if r[:arearegion]
+    ocd_ids << {
+      id: "#{base_id}/region:#{idify(r[:arearegion])}",
+      name: r[:arearegion]
+    }
+  end
+
+  if r[:areasub_region]
+    ocd_ids << {
+      id: "#{base_id}/region:#{idify(r[:arearegion])}/subregion:#{idify(r[:areasub_region])}",
+      name: r[:areasub_region]
+    }
+  end
+
+  if r[:areadistrict]
+    ocd_ids << {
+      id: "#{base_id}/region:#{idify(r[:arearegion])}/subregion:#{idify(r[:areasub_region])}/district:#{idify(r[:areadistrict])}",
+      name: r[:areadistrict]
+    }
+  end
+
+  if r[:areaconstituency]
+    ocd_ids << {
+      id: "#{base_id}/region:#{idify(r[:arearegion])}/subregion:#{idify(r[:areasub_region])}/district:#{idify(r[:areadistrict])}/constituency:#{idify(r[:areaconstituency])}",
+      name: r[:areaconstituency]
+    }
   end
 end
 
-rows.compact.reject { |r| r[:name] && r[:name].end_with?('Youth') }.uniq { |r| r[:id] }.each do |row|
+ocd_ids.each do |row|
   ScraperWiki.save_sqlite([:id], row)
 end
