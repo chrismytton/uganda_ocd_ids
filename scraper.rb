@@ -17,6 +17,13 @@ rows = csv.map do |r|
   }
 end
 
-rows.compact.reject { |r| r[:name] && r[:name].end_with?('Youth') }.each do |row|
+rows.compact.uniq.map { |r| r[:id] }.each do |r|
+  parts = r.split('/')
+  (parts.size - 1).downto(2).each do |n|
+    rows << { id: parts.take(n).join('/'), name: nil }
+  end
+end
+
+rows.compact.reject { |r| r[:name] && r[:name].end_with?('Youth') }.uniq { |r| r[:id] }.each do |row|
   ScraperWiki.save_sqlite([:id], row)
 end
