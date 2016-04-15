@@ -20,33 +20,29 @@ def id_for(parts)
 end
 
 csv.each do |r|
-  if r[:arearegion]
-    ocd_ids << {
-      id: id_for(region: r[:arearegion]),
-      name: r[:arearegion]
-    }
-  end
+  next unless r[:arearegion]
+  ocd_ids << {
+    id: id_for(region: r[:arearegion]),
+    name: r[:arearegion]
+  }
 
-  if r[:areasub_region]
-    ocd_ids << {
-      id: id_for(region: r[:arearegion], subregion: r[:areasub_region]),
-      name: r[:areasub_region]
-    }
-  end
+  next unless r[:areasub_region]
+  ocd_ids << {
+    id: id_for(region: r[:arearegion], subregion: r[:areasub_region]),
+    name: r[:areasub_region]
+  }
 
-  if r[:areadistrict]
-    ocd_ids << {
-      id: id_for(region: r[:arearegion], subregion: r[:areasub_region], district: r[:areadistrict]),
-      name: r[:areadistrict]
-    }
-  end
+  next unless r[:areadistrict]
+  ocd_ids << {
+    id: id_for(region: r[:arearegion], subregion: r[:areasub_region], district: r[:areadistrict]),
+    name: r[:areadistrict]
+  }
 
-  if r[:areadistrict] && r[:areaconstituency]
-    ocd_ids << {
-      id: id_for(region:r[:arearegion], subregion: r[:areasub_region], district: r[:areadistrict], constituency: r[:areaconstituency]),
-      name: r[:areaconstituency]
-    }
-  end
+  next unless r[:areaconstituency]
+  ocd_ids << {
+    id: id_for(region:r[:arearegion], subregion: r[:areasub_region], district: r[:areadistrict], constituency: r[:areaconstituency]),
+    name: r[:areaconstituency]
+  }
 end
 
 ocd_ids.each do |row|
