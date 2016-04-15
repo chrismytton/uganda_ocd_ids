@@ -11,37 +11,39 @@ csv = CSV.parse(open(csv_url).read, headers: true, header_converters: :symbol)
 
 ocd_ids = []
 
-base_id = "ocd-division/country:ng"
-
 def idify(name)
-  name.to_s.downcase.gsub(/[[:space:]]+/, '_')
+  name.downcase.gsub(/[[:space:]]+/, '_')
+end
+
+def id_for(parts)
+  "ocd-division/country:ng/" + parts.map { |type, value| [type, idify(value)].join(':') }.join('/')
 end
 
 csv.each do |r|
   if r[:arearegion]
     ocd_ids << {
-      id: "#{base_id}/region:#{idify(r[:arearegion])}",
+      id: id_for(region: r[:arearegion]),
       name: r[:arearegion]
     }
   end
 
   if r[:areasub_region]
     ocd_ids << {
-      id: "#{base_id}/region:#{idify(r[:arearegion])}/subregion:#{idify(r[:areasub_region])}",
+      id: id_for(region: r[:arearegion], subregion: r[:areasub_region]),
       name: r[:areasub_region]
     }
   end
 
   if r[:areadistrict]
     ocd_ids << {
-      id: "#{base_id}/region:#{idify(r[:arearegion])}/subregion:#{idify(r[:areasub_region])}/district:#{idify(r[:areadistrict])}",
+      id: id_for(region: r[:arearegion], subregion: r[:areasub_region], district: r[:areadistrict]),
       name: r[:areadistrict]
     }
   end
 
-  if r[:areaconstituency]
+  if r[:areadistrict] && r[:areaconstituency]
     ocd_ids << {
-      id: "#{base_id}/region:#{idify(r[:arearegion])}/subregion:#{idify(r[:areasub_region])}/district:#{idify(r[:areadistrict])}/constituency:#{idify(r[:areaconstituency])}",
+      id: id_for(region:r[:arearegion], subregion: r[:areasub_region], district: r[:areadistrict], constituency: r[:areaconstituency]),
       name: r[:areaconstituency]
     }
   end
