@@ -12,7 +12,7 @@ csv = CSV.parse(open(csv_url).read, headers: true, header_converters: :symbol)
 ocd_ids = []
 
 def idify(name)
-  name.downcase.gsub(/[[:space:]]+/, '_')
+  name.downcase.gsub(/[[:space:]]+/, '_').gsub('/', '~')
 end
 
 def id_for(parts)
