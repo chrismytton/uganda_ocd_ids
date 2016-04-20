@@ -10,4 +10,4 @@ The identifiers can be found in `identifiers/country-ug.csv`. They follow the st
 
     git clone https://github.com/theyworkforyou/uganda_ocd_ids
     cd uganda_ocd_ids
-    rake generate_csv
+    bundle exec rake generate_csv
