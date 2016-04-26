@@ -10,7 +10,7 @@ task :generate_csv do
   end
 
   def id_for(parts)
-    "ocd-division/country:ng/" + parts.map { |type, value| [type, idify(value)].join(':') }.join('/')
+    "ocd-division/country:ug/" + parts.map { |type, value| [type, idify(value)].join(':') }.join('/')
   end
 
   csv_url = 'https://docs.google.com/spreadsheets/d/1LetNFNq6ovg4bbq-Whze0Q06CYSpNqpRIzSUb9yVtw4/export?format=csv'
