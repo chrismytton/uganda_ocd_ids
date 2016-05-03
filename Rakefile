@@ -2,6 +2,7 @@ require 'bundler/setup'
 require 'open-uri'
 require 'csv'
 require 'pry'
+require 'set'
 
 desc 'Generate a CSV file of Uganda OCD IDs from the Google Spreadsheet'
 task :generate_csv do
@@ -17,7 +18,7 @@ task :generate_csv do
 
   csv = CSV.parse(open(csv_url).read, headers: true, header_converters: :symbol)
 
-  ocd_ids = []
+  ocd_ids = Set.new
 
   csv.each do |r|
     next unless r[:arearegion]
