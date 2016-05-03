@@ -48,7 +48,7 @@ task :generate_csv do
 
   out = CSV.generate do |csv|
     csv << ocd_ids.first.keys
-    ocd_ids.each { |row| csv << row.values }
+    ocd_ids.sort_by { |ocd| ocd[:id] }.each { |row| csv << row.values }
   end
 
   filename = 'identifiers/country-ug.csv'
