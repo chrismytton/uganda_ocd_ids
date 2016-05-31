@@ -7,7 +7,7 @@ require 'set'
 desc 'Generate a CSV file of Uganda OCD IDs from the Google Spreadsheet'
 task :generate_csv do
   def idify(name)
-    name.downcase.gsub(/[[:space:]]+/, '_').gsub('/', '~')
+    name.strip.downcase.gsub(/[[:space:]]+/, '_').gsub('/', '~')
   end
 
   def id_for(parts)
@@ -43,6 +43,35 @@ task :generate_csv do
     ocd_ids << {
       id: id_for(region:r[:arearegion], subregion: r[:areasub_region], district: r[:areadistrict], constituency: r[:areaconstituency]),
       name: r[:areaconstituency]
+    }
+  end
+
+  area_csv = CSV.parse(open('area_info.csv').read, headers: true, header_converters: :symbol)
+
+  area_csv.each do |r|
+    next unless r[:region]
+    ocd_ids << {
+      id: id_for(region: r[:region]),
+      name: r[:region].strip
+    }
+
+    next unless r[:subregion]
+    ocd_ids << {
+      id: id_for(region: r[:region], subregion: r[:subregion]),
+      name: r[:subregion].strip
+    }
+
+    next unless r[:district]
+    ocd_ids << {
+      id: id_for(region: r[:region], subregion: r[:subregion], district: r[:district]),
+      name: r[:district].strip
+    }
+
+    next unless r[:constituency]
+    next if ['-', '_'].include?(r[:constituency])
+    ocd_ids << {
+      id: id_for(region: r[:region], subregion: r[:subregion], district: r[:district], constituency: r[:constituency]),
+      name: r[:constituency].strip
     }
   end
 
