@@ -52,7 +52,6 @@ ocd-division/country:ug/region:central/subregion:buganda/district:lwengo/constit
 ocd-division/country:ug/region:central/subregion:buganda/district:lwengo/constituency:bukoto_west,Bukoto West
 ocd-division/country:ug/region:central/subregion:buganda/district:lyantonde,Lyantonde
 ocd-division/country:ug/region:central/subregion:buganda/district:lyantonde/constituency:kabula_county,Kabula County
-ocd-division/country:ug/region:central/subregion:buganda/district:lyatonde,Lyatonde
 ocd-division/country:ug/region:central/subregion:buganda/district:masaka,Masaka
 ocd-division/country:ug/region:central/subregion:buganda/district:masaka/constituency:bukoto_central,Bukoto Central
 ocd-division/country:ug/region:central/subregion:buganda/district:masaka/constituency:bukoto_east,Bukoto East
@@ -176,10 +175,9 @@ ocd-division/country:ug/region:eastern/subregion:busoga/district:mayuge,Mayuge
 ocd-division/country:ug/region:eastern/subregion:busoga/district:mayuge/constituency:bunya_east,Bunya East
 ocd-division/country:ug/region:eastern/subregion:busoga/district:mayuge/constituency:bunya_south,Bunya South
 ocd-division/country:ug/region:eastern/subregion:busoga/district:mayuge/constituency:bunya_west,Bunya West
-ocd-division/country:ug/region:eastern/subregion:busoga/district:namayigo,Namayigo
-ocd-division/country:ug/region:eastern/subregion:busoga/district:namayigo/constituency:bukooli_south,Bukooli South
 ocd-division/country:ug/region:eastern/subregion:busoga/district:namayingo,Namayingo
 ocd-division/country:ug/region:eastern/subregion:busoga/district:namayingo/constituency:bukooli_island,Bukooli Island
+ocd-division/country:ug/region:eastern/subregion:busoga/district:namayingo/constituency:bukooli_south,Bukooli South
 ocd-division/country:ug/region:eastern/subregion:busoga/district:namutumba,Namutumba
 ocd-division/country:ug/region:eastern/subregion:busoga/district:namutumba/constituency:bukono_county,Bukono County
 ocd-division/country:ug/region:eastern/subregion:busoga/district:namutumba/constituency:busiki_county,Busiki County
@@ -297,7 +295,6 @@ ocd-division/country:ug/region:northern/subregion:lango/district:oyam,Oyam
 ocd-division/country:ug/region:northern/subregion:lango/district:oyam/constituency:oyam_north,Oyam North
 ocd-division/country:ug/region:northern/subregion:lango/district:oyam/constituency:oyam_south,Oyam South
 ocd-division/country:ug/region:northern/subregion:west_nile,West Nile
-ocd-division/country:ug/region:northern/subregion:west_nile/district:adjuman,Adjuman
 ocd-division/country:ug/region:northern/subregion:west_nile/district:adjumani,Adjumani
 ocd-division/country:ug/region:northern/subregion:west_nile/district:adjumani/constituency:adjumani_east,Adjumani East
 ocd-division/country:ug/region:northern/subregion:west_nile/district:adjumani/constituency:adjumani_west,Adjumani West
@@ -348,7 +345,6 @@ ocd-division/country:ug/region:western/subregion:ankole/district:kiruhura,Kiruhu
 ocd-division/country:ug/region:western/subregion:ankole/district:kiruhura/constituency:kashongi_county,Kashongi County
 ocd-division/country:ug/region:western/subregion:ankole/district:kiruhura/constituency:kazo_county,Kazo County
 ocd-division/country:ug/region:western/subregion:ankole/district:kiruhura/constituency:nyabushozi_county,Nyabushozi County
-ocd-division/country:ug/region:western/subregion:ankole/district:kirunura,Kirunura
 ocd-division/country:ug/region:western/subregion:ankole/district:mbarara,Mbarara
 ocd-division/country:ug/region:western/subregion:ankole/district:mbarara/constituency:kashari_north,Kashari North
 ocd-division/country:ug/region:western/subregion:ankole/district:mbarara/constituency:kashari_south,Kashari south
@@ -385,7 +381,6 @@ ocd-division/country:ug/region:western/subregion:bunyoro/district:kibaale/consti
 ocd-division/country:ug/region:western/subregion:bunyoro/district:kibaale/constituency:buyaga_east,Buyaga East
 ocd-division/country:ug/region:western/subregion:bunyoro/district:kibaale/constituency:buyaga_west,Buyaga West
 ocd-division/country:ug/region:western/subregion:bunyoro/district:kibaale/constituency:buyanja,Buyanja
-ocd-division/country:ug/region:western/subregion:bunyoro/district:kiryadongo,Kiryadongo
 ocd-division/country:ug/region:western/subregion:bunyoro/district:kiryandongo,Kiryandongo
 ocd-division/country:ug/region:western/subregion:bunyoro/district:kiryandongo/constituency:kibanda_north,Kibanda North
 ocd-division/country:ug/region:western/subregion:bunyoro/district:kiryandongo/constituency:kibanda_south,Kibanda South
