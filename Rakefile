@@ -14,8 +14,8 @@ task :generate_csv do
     "ocd-division/country:ug/" + parts.map { |type, value| [type, idify(value)].join(':') }.join('/')
   end
 
-  def ocd_ids_from_csv(csv_data, mapping = {})
-    csv = CSV.parse(csv_data, headers: true, header_converters: :symbol)
+  def ocd_ids_from_csv(raw_csv_data, mapping = {})
+    csv = CSV.parse(raw_csv_data, headers: true, header_converters: :symbol)
     ocd_ids = Set.new
 
     csv.each do |r|
