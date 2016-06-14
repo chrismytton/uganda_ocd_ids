@@ -52,10 +52,12 @@ task :generate_csv do
     ocd_ids
   end
 
-  google_csv = open('https://docs.google.com/spreadsheets/d/1LetNFNq6ovg4bbq-Whze0Q06CYSpNqpRIzSUb9yVtw4/export?format=csv').read
-  area_csv = open('area_info.csv').read
+  google_raw_csv_data = open('https://docs.google.com/spreadsheets/d/1LetNFNq6ovg4bbq-Whze0Q06CYSpNqpRIzSUb9yVtw4/export?format=csv').read
+  google_csv_mapping = { region: :arearegion, subregion: :areasub_region, district: :areadistrict, constituency: :areaconstituency }
+  ocd_ids = ocd_ids_from_csv(google_raw_csv_data, google_csv_mapping)
 
-  ocd_ids = ocd_ids_from_csv(google_csv, region: :arearegion, subregion: :areasub_region, district: :areadistrict, constituency: :areaconstituency) + ocd_ids_from_csv(area_csv)
+  area_raw_csv_data = open('area_info.csv').read
+  ocd_ids += ocd_ids_from_csv(area_raw_csv_data)
 
   out = CSV.generate do |csv|
     csv << ocd_ids.first.keys
