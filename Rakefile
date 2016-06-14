@@ -14,66 +14,48 @@ task :generate_csv do
     "ocd-division/country:ug/" + parts.map { |type, value| [type, idify(value)].join(':') }.join('/')
   end
 
-  csv_url = 'https://docs.google.com/spreadsheets/d/1LetNFNq6ovg4bbq-Whze0Q06CYSpNqpRIzSUb9yVtw4/export?format=csv'
+  def ocd_ids_from_csv(csv_data, mapping = {})
+    csv = CSV.parse(csv_data, headers: true, header_converters: :symbol)
+    ocd_ids = Set.new
 
-  csv = CSV.parse(open(csv_url).read, headers: true, header_converters: :symbol)
+    csv.each do |r|
+      region = r[mapping.fetch(:region, :region)]
+      next unless region
+      ocd_ids << {
+        id: id_for(region: region),
+        name: region.strip
+      }
 
-  ocd_ids = Set.new
+      subregion = r[mapping.fetch(:subregion, :subregion)]
+      next unless subregion
+      ocd_ids << {
+        id: id_for(region: region, subregion: subregion),
+        name: subregion.strip
+      }
 
-  csv.each do |r|
-    next unless r[:arearegion]
-    ocd_ids << {
-      id: id_for(region: r[:arearegion]),
-      name: r[:arearegion]
-    }
+      district = r[mapping.fetch(:district, :district)]
+      next unless district
+      ocd_ids << {
+        id: id_for(region: region, subregion: subregion, district: district),
+        name: district.strip
+      }
 
-    next unless r[:areasub_region]
-    ocd_ids << {
-      id: id_for(region: r[:arearegion], subregion: r[:areasub_region]),
-      name: r[:areasub_region]
-    }
+      constituency = r[mapping.fetch(:constituency, :constituency)]
+      next unless constituency
+      next if ['-', '_'].include?(constituency)
+      ocd_ids << {
+        id: id_for(region: region, subregion: subregion, district: district, constituency: constituency),
+        name: constituency.strip
+      }
+    end
 
-    next unless r[:areadistrict]
-    ocd_ids << {
-      id: id_for(region: r[:arearegion], subregion: r[:areasub_region], district: r[:areadistrict]),
-      name: r[:areadistrict]
-    }
-
-    next unless r[:areaconstituency]
-    ocd_ids << {
-      id: id_for(region:r[:arearegion], subregion: r[:areasub_region], district: r[:areadistrict], constituency: r[:areaconstituency]),
-      name: r[:areaconstituency]
-    }
+    ocd_ids
   end
 
-  area_csv = CSV.parse(open('area_info.csv').read, headers: true, header_converters: :symbol)
+  google_csv = open('https://docs.google.com/spreadsheets/d/1LetNFNq6ovg4bbq-Whze0Q06CYSpNqpRIzSUb9yVtw4/export?format=csv').read
+  area_csv = open('area_info.csv').read
 
-  area_csv.each do |r|
-    next unless r[:region]
-    ocd_ids << {
-      id: id_for(region: r[:region]),
-      name: r[:region].strip
-    }
-
-    next unless r[:subregion]
-    ocd_ids << {
-      id: id_for(region: r[:region], subregion: r[:subregion]),
-      name: r[:subregion].strip
-    }
-
-    next unless r[:district]
-    ocd_ids << {
-      id: id_for(region: r[:region], subregion: r[:subregion], district: r[:district]),
-      name: r[:district].strip
-    }
-
-    next unless r[:constituency]
-    next if ['-', '_'].include?(r[:constituency])
-    ocd_ids << {
-      id: id_for(region: r[:region], subregion: r[:subregion], district: r[:district], constituency: r[:constituency]),
-      name: r[:constituency].strip
-    }
-  end
+  ocd_ids = ocd_ids_from_csv(google_csv, region: :arearegion, subregion: :areasub_region, district: :areadistrict, constituency: :areaconstituency) + ocd_ids_from_csv(area_csv)
 
   out = CSV.generate do |csv|
     csv << ocd_ids.first.keys
