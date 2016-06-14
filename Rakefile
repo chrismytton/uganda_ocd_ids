@@ -4,7 +4,7 @@ require 'csv'
 require 'pry'
 require 'set'
 
-desc 'Generate a CSV file of Uganda OCD IDs from the Google Spreadsheet'
+desc 'Generate a CSV file of Uganda OCD IDs from CSV file sources'
 task :generate_csv do
   def idify(name)
     name.strip.downcase.gsub(/[[:space:]]+/, '_').gsub('/', '~')
