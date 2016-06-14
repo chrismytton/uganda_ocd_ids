@@ -14,6 +14,12 @@ task :generate_csv do
     "ocd-division/country:ug/" + parts.map { |type, value| [type, idify(value)].join(':') }.join('/')
   end
 
+  # Converts raw CSV data into an Array of OCD ID Hashes.
+  #
+  # @param raw_csv_data [String] the raw CSV data to convert to OCD IDs.
+  # @param mapping [Hash, {}] mapping of column_we_want => column_in_csv symbols.
+  #   Valid column names are `:region`, `:subregion`, `:district` and `:constituency`.
+  # @return [Array] each object in the array is a hash with `:id` and `:name` props.
   def ocd_ids_from_csv(raw_csv_data, mapping = {})
     csv = CSV.parse(raw_csv_data, headers: true, header_converters: :symbol)
     ocd_ids = Set.new
