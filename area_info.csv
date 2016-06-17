@@ -1,1 +1,140 @@
-place,region,subregion,district,constituencyarea/amuru_district,Northern,Acholi,Amuru,_area/aringa_county,Northern,West Nile,Yumbe,Aringa Countyarea/bbale_county,Central,Buganda,Kayunga,Bbale Countyarea/bubulo_county_east,Eastern,Bugisu,Manafwa,Bubulo Eastarea/bubulo_county_west,Eastern,Bugisu,Manafwa,Bubulo Westarea/budadiri_county_east,Eastern,Bugisu,Sironko,Budadiri Eastarea/budadiri_county_west,Eastern,Bugisu,Sironko,Budadiri Westarea/budiope_county_east,Eastern,Busoga,Buyende,Budiope Eastarea/budiope_county_west,Eastern,Busoga,Buyende,Budiope Westarea/bufumbira_county_east,Western,Kigezi,Kisoro,Bufumbira Eastarea/bufumbira_county_north,Western,Kigezi,Kisoro,Bufumbira Northarea/bufumbira_county_south,Western,Kigezi,Kisoro,Bufumbira Southarea/bugabula_county_north,Eastern,Busoga,Kamuli,Bugabula Northarea/bugabula_county_south,Eastern,Busoga,Kamuli,Bugabula Southarea/bugahya_county,Western,Bunyoro,Hoima,Bugahya Countyarea/bugangaizi_county_east,Western,Bunyoro,Kibaale,Bugangaizi Eastarea/bugangaizi_county_west,Western,Bunyoro,Kibaale,Bugangaizi Westarea/bughendera,Western,Tooro/Rwenzori,Bundibugyo,Bughendera Countyarea/buikwe_county_north,Central,Buganda,Buikwe,Buikwe Northarea/buikwe_county_south,Central,Buganda,Buikwe,Buikwe Southarea/buikwe_county_west,Central,Buganda,Buikwe,Buikwe Westarea/bujuma_county,Central,Buganda,Kalangala,Bujuma Countyarea/bukomansimbi_county,Central,Buganda,Bukomansimbi,Bukomansimbi Countyarea/bukonjo_county_east,Western,Tooro/Rwenzori,Kasese,Bukonjo Eastarea/bukonjo_county_west,Western,Tooro/Rwenzori,Kasese,Bukonjo Westarea/bukooli_county_central,Eastern ,Busoga,Bugiri,Bukooli Centralarea/bukooli_county_north,Eastern ,Busoga,Bugiri,Bukooli Northarea/bukooli_county_south,Eastern ,Busoga,Bugiri,Bukooli Southarea/bukooli_islands_county,Eastern ,Busoga,Bugiri,Bukooli Islandarea/bukoto_county_central,Central,Buganda,Masaka,Bukoto Centralarea/bukoto_county_east,Central,Buganda,Masaka,Bukoto Eastarea/bukoto_county_mid-west,Central,Buganda,Masaka,Bukoto Mid Westarea/bukoto_county_south,Central,Buganda,Masaka,Bukoto Southarea/bukoto_county_west,Central,Buganda,Masaka,Bukoto Westarea/bungokho_county_north,Eastern,Bugisu,Mbale,Bungokho Northarea/bungokho_county_south,Eastern,Bugisu,Mbale,Bungokho Southarea/bunya_county_east,Eastern,Busoga,Mayuge,Bunya Eastarea/bunya_county_south,Eastern,Busoga,Mayuge,Bunya Southarea/bunya_county_west,Eastern,Busoga,Mayuge,Bunya Westarea/bunyangabu_county,Western,Tooro/Rwenzori,Kabarole,Bunyangabu Countyarea/bunyaruguru_county,Western,Ankole,Rubirizi,Bunyaruguru Countyarea/bunyole_county_east,Eastern,Bukedi,Butaleja,Bunyole Eastarea/bunyole_county_west,Eastern,Bukedi,Butaleja,Bunyole Westarea/buruli_county,Western,Bunyoro,Masindi,Buruli Countyarea/busiro_county_east,Central ,Buganda,Wakiso,Busiro Eastarea/busiro_county_north,Central ,Buganda,Wakiso,Busiro Northarea/busiro_county_south,Central ,Buganda,Wakiso,Busiro Southarea/busongora_county_north,Western,Tooro/Rwenzori,Kasese,Busongora Northarea/busongora_county_south,Western,Tooro/Rwenzori,Kasese,Busongora Southarea/busunjju_county,Central,Buganda,Mityana,Busunjju Countyarea/buvuma_county,Central,Buganda,Buvuma,Buvuma Countyarea/buyaga_county_east,Western,Bunyoro,Kibaale,Buyaga Eastarea/buyaga_county_west,Western,Bunyoro,Kibaale,Buyaga Westarea/buyanja_county,Western,Bunyoro,Kibaale,Buyanja Countyarea/buzaya_county,Eastern,Busoga,Kamuli,Buzaya Countyarea/central_division,,,,area/chua_west_county,Northern,Acholi,Kitgum,Chua West Countyarea/dodoth_county_east,Northern,Karamoja,Kaabong ,Dodoth Eastarea/dodoth_county_west,Northern,Karamoja,Kaabong ,Dodoth Westarea/dokolo_county_north,Northern,Lango,Dokolo,Dokolo Northarea/dokolo_county_south,Northern,Lango,Dokolo,Dokolo Southarea/east_moyo_county,Northern,West Nile,Moyo,East Moyoarea/erute_county_north,Northern,Lango,Lira,Erute Northarea/erute_county_south,Northern,Lango,Lira,Erute Southarea/fort_portal_municipality,Western,Tooro/Rwenzori,Kabarole,Fort Portal Municipalityarea/gomba_county_west,Central,Buganda,Gomba,Gomba Westarea/gomba_county_east,Central,Buganda,Gomba,Gomba Eastarea/ibanda_county_north,Western,Ankole,Ibanda,Ibanda Northarea/ibanda_county_south,Western,Ankole,Ibanda,Ibanda Southarea/igara_county_east,Western,Ankole,Bushenyi,Igara Eastarea/igara_county_west,Western,Ankole,Bushenyi,Igara Westarea/iki-iki_county,Eastern,Bukedi,Budaka,Iki Iki Countyarea/isingiro_county_north,Western,Ankole,Isingiro,Isingiro Northarea/isingiro_county_south,Western,Ankole,Isingiro,Isingiro Southarea/jinja_municipality_east,Eastern,Busoga,Jinja,Jinja Municipality Eastarea/kalaki_county,Eastern,Teso,Kaberamaido,Kalaki Countyarea/kalungu_county_east,Central,Buganda,Kalungu,Kalungu Eastarea/kalungu_county_west,Central,Buganda,Kalungu,Kalungu Westarea/kashari_county,Western,Ankole,Mbarara,Kashari Countyarea/kassanda_county_north,Central,Buganda,Mubende,Kassanda Northarea/kassanda_county_south,Central,Buganda,Mubende,Kassanda Southarea/katikamu_county_north,Central,Buganda,Luweero,Katikamu Northarea/katikamu_county_south,Central,Buganda,Luweero,Katikamu Southarea/kawempe_division_north,Central,Buganda,Kampala,Kawempe Northarea/kawempe_division_south,Central,Buganda,Kampala,Kawempe Southarea/kibanda_county,Western,Bunyoro,Kiryandongo,Kibanda Countyarea/kiboga_county_east,Central,Buganda,Kiboga,Kiboga Eastarea/kibuku_county,Eastern,Bukedi,Kibuku,Kibuku Countyarea/kigulu_county_north,Eastern,Busoga,Iganga,Kigulu Northarea/kigulu_county_south,Eastern,Busoga,Iganga,Kigulu Southarea/kilak_county,Northern,Acholi,Amuru,Kilak Countyarea/kinkiizi_county_east,Western,Kigezi,Kanungu,Kinkizi Eastarea/kinkiizi_county_west,Western,Kigezi,Kanungu,Kinkizi Westarea/kole_county,Northern,Lango,Kole,Kole Countyarea/kyadondo_county_east,Central,Buganda,Wakiso,Kyadondo Eastarea/kyadondo_county_north,Central,Buganda,Wakiso,Kyadondo Northarea/kyadondo_county_south,Central,Buganda,Wakiso,Kyadondo Southarea/kyaka_county,Western,Tooro/Rwenzori,Kyegegwa,Kyaka Countyarea/luuka_county,Eastern,Busoga,Luuka,Luuka Countyarea/lwemiyaga_county,Central,Buganda,Sembabule,Lwemiyaga Countyarea/madi-okollo_county,Northern,West Nile,Arua,Madi-Okollo Countyarea/makindye_division_east,Central,Buganda,Kampala,Makindye Eastarea/makindye_division_west,Central,Buganda,Kampala,Makindye Westarea/matheniko_county,Northern,Karamoja,Moroto,Matheniko Countyarea/mawogola_county,Central,Buganda,Sembabule,Mawogola Countyarea/mawokota_county_north,Central,Buganda,Mpigi,Mawokota Northarea/mawokota_county_south,Central,Buganda,Mpigi,Mawokota Southarea/mityana_county_north,Central,Buganda,Mityana,Mityana Northarea/mityana_county_south,Central,Buganda,Mityana,Mityana Southarea/mukono_county_north,Central,Buganda,Mukono,Mukono Northarea/mwenge_county_north,Western,Tooro/Rwenzori,Kyenjojo,Mwenge Northarea/mwenge_county_south,Western,Tooro/Rwenzori,Kyenjojo,Mwenge Southarea/nakaseke_county_north,Central,Buganda,Nakaseke,Nakaseke Northarea/nakaseke_county_south,Central,Buganda,Nakaseke,Nakaseke Southarea/nakifuma_county,Central,Buganda,Mukono,Nakifuma Countyarea/ndorwa_county_east,Western,Kigezi,Kabale,Ndorwa Eastarea/ndorwa_county_west,Western,Kigezi,Kabale,Ndorwa Westarea/ntenjeru_county_north,Central,Buganda,Kayunga,Ntenjeru Northarea/ntenjeru_county_south,Central,Buganda,Kayunga,Ntenjeru Southarea/ntugamo_municipality,Western,Ankole,Ntungamo,Ntungamo Municipalityarea/oyam_county_north,Northern,Lango,Oyam,Oyam Northarea/oyam_county_south,Northern,Lango,Oyam,Oyam Southarea/rubaga_division_north,Central,Buganda,Kampala,Rubaga Northarea/rubaga_division_south,Central,Buganda,Kampala,Rubaga Southarea/rubanda_county_east,Western,Kigezi,Kabale,Rubanda Eastarea/rubanda_county_west,Western,Kigezi,Kabale,Rubanda Westarea/ruhama_county,Western,Ankole,Ntungamo,Ruhama Countyarea/ruhinda_county,Western,Ankole,Mitooma,Ruhinda Countyarea/samia-bugwe_county_north,Eastern,Bukedi,Busia,Samia Bugwe Northarea/samia-bugwe_county_south,Eastern,Bukedi,Busia,Samia Bugwe Southarea/sheema_county_north,Western,Ankole,Sheema,Sheema Northarea/sheema_county_south,Western,Ankole,Sheema,Sheema Southarea/terego_county,Northern,West Nile,Arua,Terego Countyarea/tororo_county,Eastern,Bukedi,Tororo,Tororo Countyarea/upe_county,Eastern,Karamoja,Amudat,Upe Countyarea/west_budama_county_north,Eastern,Bukedi,Tororo,West Budama Northarea/west_budama_county_south,Eastern,Bukedi,Tororo,West Budama Southarea/west_moyo_county,Northern,West Nile,Moyo,West Moyoarea/zombo_district,Northern,West Nile,Zombo,-
+place,region,subregion,district,constituency
+area/amuru_district,Northern,Acholi,Amuru,_
+area/aringa_county,Northern,West Nile,Yumbe,Aringa County
+area/bbale_county,Central,Buganda,Kayunga,Bbale County
+area/bubulo_county_east,Eastern,Bugisu,Manafwa,Bubulo East
+area/bubulo_county_west,Eastern,Bugisu,Manafwa,Bubulo West
+area/budadiri_county_east,Eastern,Bugisu,Sironko,Budadiri East
+area/budadiri_county_west,Eastern,Bugisu,Sironko,Budadiri West
+area/budiope_county_east,Eastern,Busoga,Buyende,Budiope East
+area/budiope_county_west,Eastern,Busoga,Buyende,Budiope West
+area/bufumbira_county_east,Western,Kigezi,Kisoro,Bufumbira East
+area/bufumbira_county_north,Western,Kigezi,Kisoro,Bufumbira North
+area/bufumbira_county_south,Western,Kigezi,Kisoro,Bufumbira South
+area/bugabula_county_north,Eastern,Busoga,Kamuli,Bugabula North
+area/bugabula_county_south,Eastern,Busoga,Kamuli,Bugabula South
+area/bugahya_county,Western,Bunyoro,Hoima,Bugahya County
+area/bugangaizi_county_east,Western,Bunyoro,Kibaale,Bugangaizi East
+area/bugangaizi_county_west,Western,Bunyoro,Kibaale,Bugangaizi West
+area/bughendera,Western,Tooro/Rwenzori,Bundibugyo,Bughendera County
+area/buikwe_county_north,Central,Buganda,Buikwe,Buikwe North
+area/buikwe_county_south,Central,Buganda,Buikwe,Buikwe South
+area/buikwe_county_west,Central,Buganda,Buikwe,Buikwe West
+area/bujuma_county,Central,Buganda,Kalangala,Bujuma County
+area/bukomansimbi_county,Central,Buganda,Bukomansimbi,Bukomansimbi County
+area/bukonjo_county_east,Western,Tooro/Rwenzori,Kasese,Bukonjo East
+area/bukonjo_county_west,Western,Tooro/Rwenzori,Kasese,Bukonjo West
+area/bukooli_county_central,Eastern ,Busoga,Bugiri,Bukooli Central
+area/bukooli_county_north,Eastern ,Busoga,Bugiri,Bukooli North
+area/bukooli_county_south,Eastern ,Busoga,Bugiri,Bukooli South
+area/bukooli_islands_county,Eastern ,Busoga,Bugiri,Bukooli Island
+area/bukoto_county_central,Central,Buganda,Masaka,Bukoto Central
+area/bukoto_county_east,Central,Buganda,Masaka,Bukoto East
+area/bukoto_county_mid-west,Central,Buganda,Masaka,Bukoto Mid West
+area/bukoto_county_south,Central,Buganda,Masaka,Bukoto South
+area/bukoto_county_west,Central,Buganda,Masaka,Bukoto West
+area/bungokho_county_north,Eastern,Bugisu,Mbale,Bungokho North
+area/bungokho_county_south,Eastern,Bugisu,Mbale,Bungokho South
+area/bunya_county_east,Eastern,Busoga,Mayuge,Bunya East
+area/bunya_county_south,Eastern,Busoga,Mayuge,Bunya South
+area/bunya_county_west,Eastern,Busoga,Mayuge,Bunya West
+area/bunyangabu_county,Western,Tooro/Rwenzori,Kabarole,Bunyangabu County
+area/bunyaruguru_county,Western,Ankole,Rubirizi,Bunyaruguru County
+area/bunyole_county_east,Eastern,Bukedi,Butaleja,Bunyole East
+area/bunyole_county_west,Eastern,Bukedi,Butaleja,Bunyole West
+area/buruli_county,Western,Bunyoro,Masindi,Buruli County
+area/busiro_county_east,Central ,Buganda,Wakiso,Busiro East
+area/busiro_county_north,Central ,Buganda,Wakiso,Busiro North
+area/busiro_county_south,Central ,Buganda,Wakiso,Busiro South
+area/busongora_county_north,Western,Tooro/Rwenzori,Kasese,Busongora North
+area/busongora_county_south,Western,Tooro/Rwenzori,Kasese,Busongora South
+area/busunjju_county,Central,Buganda,Mityana,Busunjju County
+area/buvuma_county,Central,Buganda,Buvuma,Buvuma County
+area/buyaga_county_east,Western,Bunyoro,Kibaale,Buyaga East
+area/buyaga_county_west,Western,Bunyoro,Kibaale,Buyaga West
+area/buyanja_county,Western,Bunyoro,Kibaale,Buyanja County
+area/buzaya_county,Eastern,Busoga,Kamuli,Buzaya County
+area/central_division,,,,
+area/chua_west_county,Northern,Acholi,Kitgum,Chua West County
+area/dodoth_county_east,Northern,Karamoja,Kaabong ,Dodoth East
+area/dodoth_county_west,Northern,Karamoja,Kaabong ,Dodoth West
+area/dokolo_county_north,Northern,Lango,Dokolo,Dokolo North
+area/dokolo_county_south,Northern,Lango,Dokolo,Dokolo South
+area/east_moyo_county,Northern,West Nile,Moyo,East Moyo
+area/erute_county_north,Northern,Lango,Lira,Erute North
+area/erute_county_south,Northern,Lango,Lira,Erute South
+area/fort_portal_municipality,Western,Tooro/Rwenzori,Kabarole,Fort Portal Municipality
+area/gomba_county_west,Central,Buganda,Gomba,Gomba West
+area/gomba_county_east,Central,Buganda,Gomba,Gomba East
+area/ibanda_county_north,Western,Ankole,Ibanda,Ibanda North
+area/ibanda_county_south,Western,Ankole,Ibanda,Ibanda South
+area/igara_county_east,Western,Ankole,Bushenyi,Igara East
+area/igara_county_west,Western,Ankole,Bushenyi,Igara West
+area/iki-iki_county,Eastern,Bukedi,Budaka,Iki Iki County
+area/isingiro_county_north,Western,Ankole,Isingiro,Isingiro North
+area/isingiro_county_south,Western,Ankole,Isingiro,Isingiro South
+area/jinja_municipality_east,Eastern,Busoga,Jinja,Jinja Municipality East
+area/kalaki_county,Eastern,Teso,Kaberamaido,Kalaki County
+area/kalungu_county_east,Central,Buganda,Kalungu,Kalungu East
+area/kalungu_county_west,Central,Buganda,Kalungu,Kalungu West
+area/kashari_county,Western,Ankole,Mbarara,Kashari County
+area/kassanda_county_north,Central,Buganda,Mubende,Kassanda North
+area/kassanda_county_south,Central,Buganda,Mubende,Kassanda South
+area/katikamu_county_north,Central,Buganda,Luweero,Katikamu North
+area/katikamu_county_south,Central,Buganda,Luweero,Katikamu South
+area/kawempe_division_north,Central,Buganda,Kampala,Kawempe North
+area/kawempe_division_south,Central,Buganda,Kampala,Kawempe South
+area/kibanda_county,Western,Bunyoro,Kiryandongo,Kibanda County
+area/kiboga_county_east,Central,Buganda,Kiboga,Kiboga East
+area/kibuku_county,Eastern,Bukedi,Kibuku,Kibuku County
+area/kigulu_county_north,Eastern,Busoga,Iganga,Kigulu North
+area/kigulu_county_south,Eastern,Busoga,Iganga,Kigulu South
+area/kilak_county,Northern,Acholi,Amuru,Kilak County
+area/kinkiizi_county_east,Western,Kigezi,Kanungu,Kinkizi East
+area/kinkiizi_county_west,Western,Kigezi,Kanungu,Kinkizi West
+area/kole_county,Northern,Lango,Kole,Kole County
+area/kyadondo_county_east,Central,Buganda,Wakiso,Kyadondo East
+area/kyadondo_county_north,Central,Buganda,Wakiso,Kyadondo North
+area/kyadondo_county_south,Central,Buganda,Wakiso,Kyadondo South
+area/kyaka_county,Western,Tooro/Rwenzori,Kyegegwa,Kyaka County
+area/luuka_county,Eastern,Busoga,Luuka,Luuka County
+area/lwemiyaga_county,Central,Buganda,Sembabule,Lwemiyaga County
+area/madi-okollo_county,Northern,West Nile,Arua,Madi-Okollo County
+area/makindye_division_east,Central,Buganda,Kampala,Makindye East
+area/makindye_division_west,Central,Buganda,Kampala,Makindye West
+area/matheniko_county,Northern,Karamoja,Moroto,Matheniko County
+area/mawogola_county,Central,Buganda,Sembabule,Mawogola County
+area/mawokota_county_north,Central,Buganda,Mpigi,Mawokota North
+area/mawokota_county_south,Central,Buganda,Mpigi,Mawokota South
+area/mityana_county_north,Central,Buganda,Mityana,Mityana North
+area/mityana_county_south,Central,Buganda,Mityana,Mityana South
+area/mukono_county_north,Central,Buganda,Mukono,Mukono North
+area/mwenge_county_north,Western,Tooro/Rwenzori,Kyenjojo,Mwenge North
+area/mwenge_county_south,Western,Tooro/Rwenzori,Kyenjojo,Mwenge South
+area/nakaseke_county_north,Central,Buganda,Nakaseke,Nakaseke North
+area/nakaseke_county_south,Central,Buganda,Nakaseke,Nakaseke South
+area/nakifuma_county,Central,Buganda,Mukono,Nakifuma County
+area/ndorwa_county_east,Western,Kigezi,Kabale,Ndorwa East
+area/ndorwa_county_west,Western,Kigezi,Kabale,Ndorwa West
+area/ntenjeru_county_north,Central,Buganda,Kayunga,Ntenjeru North
+area/ntenjeru_county_south,Central,Buganda,Kayunga,Ntenjeru South
+area/ntugamo_municipality,Western,Ankole,Ntungamo,Ntungamo Municipality
+area/oyam_county_north,Northern,Lango,Oyam,Oyam North
+area/oyam_county_south,Northern,Lango,Oyam,Oyam South
+area/rubaga_division_north,Central,Buganda,Kampala,Rubaga North
+area/rubaga_division_south,Central,Buganda,Kampala,Rubaga South
+area/rubanda_county_east,Western,Kigezi,Kabale,Rubanda East
+area/rubanda_county_west,Western,Kigezi,Kabale,Rubanda West
+area/ruhama_county,Western,Ankole,Ntungamo,Ruhama County
+area/ruhinda_county,Western,Ankole,Mitooma,Ruhinda County
+area/samia-bugwe_county_north,Eastern,Bukedi,Busia,Samia Bugwe North
+area/samia-bugwe_county_south,Eastern,Bukedi,Busia,Samia Bugwe South
+area/sheema_county_north,Western,Ankole,Sheema,Sheema North
+area/sheema_county_south,Western,Ankole,Sheema,Sheema South
+area/terego_county,Northern,West Nile,Arua,Terego County
+area/tororo_county,Eastern,Bukedi,Tororo,Tororo County
+area/upe_county,Eastern,Karamoja,Amudat,Upe County
+area/west_budama_county_north,Eastern,Bukedi,Tororo,West Budama North
+area/west_budama_county_south,Eastern,Bukedi,Tororo,West Budama South
+area/west_moyo_county,Northern,West Nile,Moyo,West Moyo
+area/zombo_district,Northern,West Nile,Zombo,-
