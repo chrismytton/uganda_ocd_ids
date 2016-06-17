@@ -14,6 +14,10 @@ task :generate_csv do
     "ocd-division/country:ug/" + parts.map { |type, value| [type, idify(value)].join(':') }.join('/')
   end
 
+  def is_empty?(cell)
+    ['', '-', '_'].include?(cell.to_s.strip)
+  end
+
   # Converts raw CSV data into an Array of OCD ID Hashes.
   #
   # @param raw_csv_data [String] the raw CSV data to convert to OCD IDs.
@@ -26,29 +30,28 @@ task :generate_csv do
 
     csv.each do |r|
       region = r[mapping.fetch(:region, :region)]
-      next unless region
+      next if is_empty?(region)
       ocd_ids << {
         id: id_for(region: region),
         name: region.strip
       }
 
       subregion = r[mapping.fetch(:subregion, :subregion)]
-      next unless subregion
+      next if is_empty?(subregion)
       ocd_ids << {
         id: id_for(region: region, subregion: subregion),
         name: subregion.strip
       }
 
       district = r[mapping.fetch(:district, :district)]
-      next unless district
+      next if is_empty?(district)
       ocd_ids << {
         id: id_for(region: region, subregion: subregion, district: district),
         name: district.strip
       }
 
       constituency = r[mapping.fetch(:constituency, :constituency)]
-      next unless constituency
-      next if ['-', '_'].include?(constituency)
+      next if is_empty?(constituency)
       ocd_ids << {
         id: id_for(region: region, subregion: subregion, district: district, constituency: constituency),
         name: constituency.strip
