@@ -220,7 +220,6 @@ ocd-division/country:ug/region:eastern/subregion:teso/district:bukedea/constitue
 ocd-division/country:ug/region:eastern/subregion:teso/district:bukedea/constituency:kachumbala_county,Kachumbala County
 ocd-division/country:ug/region:eastern/subregion:teso/district:kaberamaido,Kaberamaido
 ocd-division/country:ug/region:eastern/subregion:teso/district:kaberamaido/constituency:kaberamaido_county,Kaberamaido County
-ocd-division/country:ug/region:eastern/subregion:teso/district:kaberamaido/constituency:kalaki_county,Kalaki county
 ocd-division/country:ug/region:eastern/subregion:teso/district:kaberamaido/constituency:kalaki_county,Kalaki County
 ocd-division/country:ug/region:eastern/subregion:teso/district:katakwi,Katakwi
 ocd-division/country:ug/region:eastern/subregion:teso/district:katakwi/constituency:toroma_county,Toroma County
@@ -386,9 +385,6 @@ ocd-division/country:ug/region:western/subregion:ankole/district:rubirizi/consti
 ocd-division/country:ug/region:western/subregion:ankole/district:sheema,Sheema
 ocd-division/country:ug/region:western/subregion:ankole/district:sheema/constituency:sheema_north,Sheema North
 ocd-division/country:ug/region:western/subregion:ankole/district:sheema/constituency:sheema_south,Sheema South
-ocd-division/country:ug/region:western/subregion:buganda,Buganda
-ocd-division/country:ug/region:western/subregion:buganda/district:wakiso,Wakiso
-ocd-division/country:ug/region:western/subregion:buganda/district:wakiso/constituency:kyadondo_east,Kyadondo East
 ocd-division/country:ug/region:western/subregion:bunyoro,Bunyoro
 ocd-division/country:ug/region:western/subregion:bunyoro/district:buliisa,Buliisa
 ocd-division/country:ug/region:western/subregion:bunyoro/district:buliisa/constituency:buliisa_county,Buliisa County
