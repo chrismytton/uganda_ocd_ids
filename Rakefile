@@ -66,7 +66,14 @@ task :generate_csv do
   ocd_ids = ocd_ids_from_csv(google_raw_csv_data, google_csv_mapping)
 
   area_raw_csv_data = open('area_info.csv').read
-  ocd_ids += ocd_ids_from_csv(area_raw_csv_data)
+  area_ocd_ids = ocd_ids_from_csv(area_raw_csv_data)
+
+  # warn of any mismatches
+  google_hash = ocd_ids.map { |r| [r[:name], r[:id]] }.to_h
+  area_hash = area_ocd_ids.map { |r| [r[:name], r[:id]] }.to_h
+  merged = google_hash.merge(area_hash) { |k, old, new| warn "#{old} != #{new} for #{k}" unless old == new; old || new }
+
+  ocd_ids += area_ocd_ids
 
   out = CSV.generate do |csv|
     csv << ocd_ids.first.keys
