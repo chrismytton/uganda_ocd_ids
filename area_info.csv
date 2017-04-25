@@ -26,13 +26,13 @@ area/bukonjo_county_east,Western,Tooro/Rwenzori,Kasese,Bukonjo East
 area/bukonjo_county_west,Western,Tooro/Rwenzori,Kasese,Bukonjo West
 area/bukooli_county_central,Eastern,Busoga,Bugiri,Bukooli Central
 area/bukooli_county_north,Eastern,Busoga,Bugiri,Bukooli North
-area/bukooli_county_south,Eastern,Busoga,Bugiri,Bukooli South
-area/bukooli_islands_county,Eastern,Busoga,Bugiri,Bukooli Island
+area/bukooli_county_south,Eastern,Busoga,Namayingo,Bukooli South
+area/bukooli_islands_county,Eastern,Busoga,Namayingo,Bukooli Island
 area/bukoto_county_central,Central,Buganda,Masaka,Bukoto Central
 area/bukoto_county_east,Central,Buganda,Masaka,Bukoto East
-area/bukoto_county_mid-west,Central,Buganda,Masaka,Bukoto Mid West
-area/bukoto_county_south,Central,Buganda,Masaka,Bukoto South
-area/bukoto_county_west,Central,Buganda,Masaka,Bukoto West
+area/bukoto_county_mid-west,Central,Buganda,Lwengo,Bukoto Mid-West
+area/bukoto_county_south,Central,Buganda,Lwengo,Bukoto South
+area/bukoto_county_west,Central,Buganda,Lwengo,Bukoto West
 area/bungokho_county_north,Eastern,Bugisu,Mbale,Bungokho North
 area/bungokho_county_south,Eastern,Bugisu,Mbale,Bungokho South
 area/bunya_county_east,Eastern,Busoga,Mayuge,Bunya East
