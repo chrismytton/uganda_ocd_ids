@@ -24,10 +24,10 @@ area/bujuma_county,Central,Buganda,Kalangala,Bujuma County
 area/bukomansimbi_county,Central,Buganda,Bukomansimbi,Bukomansimbi County
 area/bukonjo_county_east,Western,Tooro/Rwenzori,Kasese,Bukonjo East
 area/bukonjo_county_west,Western,Tooro/Rwenzori,Kasese,Bukonjo West
-area/bukooli_county_central,Eastern ,Busoga,Bugiri,Bukooli Central
-area/bukooli_county_north,Eastern ,Busoga,Bugiri,Bukooli North
-area/bukooli_county_south,Eastern ,Busoga,Bugiri,Bukooli South
-area/bukooli_islands_county,Eastern ,Busoga,Bugiri,Bukooli Island
+area/bukooli_county_central,Eastern,Busoga,Bugiri,Bukooli Central
+area/bukooli_county_north,Eastern,Busoga,Bugiri,Bukooli North
+area/bukooli_county_south,Eastern,Busoga,Bugiri,Bukooli South
+area/bukooli_islands_county,Eastern,Busoga,Bugiri,Bukooli Island
 area/bukoto_county_central,Central,Buganda,Masaka,Bukoto Central
 area/bukoto_county_east,Central,Buganda,Masaka,Bukoto East
 area/bukoto_county_mid-west,Central,Buganda,Masaka,Bukoto Mid West
@@ -43,9 +43,9 @@ area/bunyaruguru_county,Western,Ankole,Rubirizi,Bunyaruguru County
 area/bunyole_county_east,Eastern,Bukedi,Butaleja,Bunyole East
 area/bunyole_county_west,Eastern,Bukedi,Butaleja,Bunyole West
 area/buruli_county,Western,Bunyoro,Masindi,Buruli County
-area/busiro_county_east,Central ,Buganda,Wakiso,Busiro East
-area/busiro_county_north,Central ,Buganda,Wakiso,Busiro North
-area/busiro_county_south,Central ,Buganda,Wakiso,Busiro South
+area/busiro_county_east,Central,Buganda,Wakiso,Busiro East
+area/busiro_county_north,Central,Buganda,Wakiso,Busiro North
+area/busiro_county_south,Central,Buganda,Wakiso,Busiro South
 area/busongora_county_north,Western,Tooro/Rwenzori,Kasese,Busongora North
 area/busongora_county_south,Western,Tooro/Rwenzori,Kasese,Busongora South
 area/busunjju_county,Central,Buganda,Mityana,Busunjju County
@@ -56,8 +56,8 @@ area/buyanja_county,Western,Bunyoro,Kibaale,Buyanja County
 area/buzaya_county,Eastern,Busoga,Kamuli,Buzaya County
 area/central_division,,,,
 area/chua_west_county,Northern,Acholi,Kitgum,Chua West County
-area/dodoth_county_east,Northern,Karamoja,Kaabong ,Dodoth East
-area/dodoth_county_west,Northern,Karamoja,Kaabong ,Dodoth West
+area/dodoth_county_east,Northern,Karamoja,Kaabong,Dodoth East
+area/dodoth_county_west,Northern,Karamoja,Kaabong,Dodoth West
 area/dokolo_county_north,Northern,Lango,Dokolo,Dokolo North
 area/dokolo_county_south,Northern,Lango,Dokolo,Dokolo South
 area/east_moyo_county,Northern,West Nile,Moyo,East Moyo
